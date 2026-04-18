@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Project</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="resetCanvas()">
+    <h1 id="websiteTitle">Banner GIF Generator</h1>
+
+    <br>
+    
+    <div id="mainBlock">
+        <canvas id="mainCanvas" width="1000" height="300">
+            
+        </canvas>
+        <div id="settings">
+            <div class="canvasSize" id="canvasWidth">
+                <p>Width: </p>
+                <input>
+            </div>
+            <div class="canvasSize" id="canvasHeight">
+                <p>Height: </p>
+                <input>
+            </div>
+            <button class="canvasButton" onclick="saveCanvas()">Save</button>
+            <button class="canvasButton" onclick="resetCanvas()">Reset</button>
+            <button class="canvasButton" onclick="updateCanvas()">Update</button>
+        </div>
+
+        <div id="textbox">
+            <textarea name="" id="textbox" rows="20" cols="50">
+
+            </textarea>
+        </div>
+    </div>
+    
+    <!-- Javascript Includes-->
+    <script src="scripts/canvas.js"></script>
+
+
+
+</body>
+</html>
